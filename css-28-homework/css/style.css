@@ -1,0 +1,27 @@
+.some-text {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.lorem1 {
+    text-decoration: line-through;
+    
+}
+
+.caps {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.wave {
+    word-spacing: 30px;
+    color: #501d80;
+    text-decoration: overline wavy;
+    text-shadow: 0px 1px 1px #a5a1a1;
+}
+
+.line {
+    text-decoration: underline double;
+    letter-spacing: 5px;
+}
