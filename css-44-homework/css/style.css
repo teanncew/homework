@@ -1,0 +1,28 @@
+body {
+    box-sizing: border-box;
+}
+
+
+p {
+    margin-top: -15px;
+}
+
+.block {
+    background: #e4dfdf;
+    border: 1px solid #000;
+    border-radius: 20px 0px 0px 20px;
+    height: 500px;
+    overflow: auto;
+    width: 1200px;
+}
+
+.block1 {
+    padding: 17px;
+    margin: 7px 5px 10px 3px;
+    border: 1px solid #000;
+    display: inline-block;
+    border-radius: 20px;
+    background: #c2a567;
+    max-width: 200px;
+    box-shadow: inset 0px 0px 5px 0px #191919;
+}
