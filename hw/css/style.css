@@ -1,0 +1,30 @@
+body {
+    background: #444;
+}
+
+.main {
+    font-size: 40px;
+    color: #fff;
+}
+
+.square {
+    display: flex;
+    height: 100px;
+    width: 900px;
+    border-radius: 30px;
+    background: #cccccc;
+    position: fixed;
+    left: 50%;
+    right: 50px;
+    bottom: 100px;
+}
+
+.circle {
+    height: 100px;
+    width: 100px;
+    background: red;
+    border-radius: 100%;
+    position: relative;
+    left: 100px;
+    bottom: 50%;
+}
