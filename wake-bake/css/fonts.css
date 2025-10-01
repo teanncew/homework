@@ -1,4 +1,4 @@
-../@font-face {
+@font-face {
     font-family: 'Gabriola';
     src: local('Gabriola'),
         url('../fonts/Gabriola.woff2') format('woff2'),
