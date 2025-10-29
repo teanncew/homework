@@ -65,16 +65,15 @@
 .button {
     width: 100%;
     display: flex;
+    font-size: 16px;
     justify-content: center;
     align-items: center;
     border-radius: 60px;
     padding: 3px 15px;
     height: 62px;
     background: var(--accnet-color);
-    font-size: 16px;
     font-weight: 500;
     line-height: 1.6;
-
     transition: var(--transition);
 }
 
@@ -201,5 +200,4 @@
 .field__input:focus+span {
     opacity: 1;
     visibility: visible;
-
 }
