@@ -1,0 +1,98 @@
+.footer {
+    background: #111;
+}
+
+.footer__inner {
+    min-height: 519px;
+}
+
+.footer__logo {
+    position: relative;
+    left: -10px;
+    padding-bottom: 25px;
+    padding-top: 50px;
+}
+
+.footer__about {
+    font-family: "NAMU Pro", sans-serif;
+    font-weight: 900;
+    font-size: 22px;
+    color: #fff;
+    padding-bottom: 30px;
+}
+
+.footer__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.info__inner {
+
+}
+
+.footer__title {
+    font-family: "NAMU Pro", sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    color: #fff;
+    padding-bottom: 12px;
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    width: 100%;
+}
+
+.footer__link {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    color: #8b8b8b;
+    transition: all 0.3s;
+}
+
+.footer__link li {
+    display: inline-block;
+}
+
+.footer__link:hover {
+    scale: calc(1.1);
+    color: #c5358c;
+}
+
+.footer__logistics {
+    font-family: "NAMU Pro", sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.footer__number {
+    transition: all 0.3s;
+}
+
+.footer__number:hover {
+    color: #c5358c;
+}
+
+.footer__socials {
+    max-width: 160px;
+    display: flex;
+    gap: 20px;
+    padding-top: 54px;
+}
+
+.footer__copy {
+    display: inline;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #8b8b8b;
+    position: relative;
+    left: 50%;
+    bottom: 1vw;
+}
