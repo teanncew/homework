@@ -1,31 +1,39 @@
-.wrapper {
-    width: 100%;
+.body--opened-menu {
+	overflow: hidden;
 }
 
 button {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    background-color: #fff;
-    color: #fff;
-    border-radius: 3px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	font-size: 24px;
+	background-color: #fff;
+	color: #fff;
+	border-radius: 3px;
 }
 
 input {
-    padding: 2px 0;
-    font-size: 18px;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    color: #c5358c;
+	padding: 2px 0;
+	font-size: 18px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	color: #c5358c;
+}
+
+.wrapper {
+	min-height: 100%;
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
 }
 
 .container {
-    max-width: 1390px;
-    margin: 0 auto;
-    padding: 0 15px;
-    height: 100%;
+	max-width: 1390px;
+	margin: 0 auto;
+	padding: 0 15px;
+	height: 100%;
 }
 
 .main {
-    flex-grow: 1;
+	flex-grow: 1;
 }
