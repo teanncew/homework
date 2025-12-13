@@ -99,26 +99,27 @@ document.querySelector('.reviews__more').addEventListener('click', function (e) 
 let accordion = document.querySelectorAll('.accordion__item');
 
 accordion.forEach((item) => {
-
-  let itemBody = item.querySelector('.accordion__body')
+  let itemBody = item.querySelector('.accordion__body');
   let itemHeight = itemBody.clientHeight;
+  itemBody.style.height = '0px';
 
-  itemBody.style.height = '0px'
+  let head = item.querySelector('.accordion__head');
+  let plusSvg = item.querySelector('.accordion__item-plus svg');
 
-  item.querySelector('.accordion__head').onclick = function () {
+  head.onclick = function () {
+    let accBody = this.closest('.accordion__item').querySelector('.accordion__body');
 
-    let accBody = this.closest('.accordion__item').querySelector('.accordion__body')
-
-    accBody.classList.toggle('accordion__body--opened')
-
+    accBody.classList.toggle('accordion__body--opened');
 
     if (accBody.classList.contains('accordion__body--opened')) {
       itemBody.style.height = itemHeight + 'px';
+      if (plusSvg) plusSvg.classList.add('rotated');
     } else {
       itemBody.style.height = '0px';
+      if (plusSvg) plusSvg.classList.remove('rotated');
     }
   }
-})
+});
 
 
 // Показать еще в новостях

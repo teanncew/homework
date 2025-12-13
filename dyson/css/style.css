@@ -18,7 +18,6 @@
 }
 
 .products__card {
-	height: 454px;
 	box-shadow: 0 4px 41px 0 rgba(0, 0, 0, 0.05), 0 4px 41px 0 rgba(0, 0, 0, 0.05);
 	transition: all 0.5s;
 }
@@ -34,7 +33,6 @@
 
 .card__img img {
 	width: 100%;
-	height: 325px;
 	transition: all 0.5s;
 }
 
@@ -85,6 +83,54 @@
 	padding-bottom: 45px;
 	margin-top: 11px;
 	margin-left: 40px;
+}
+
+/* ========================= */
+
+.mobile__content {
+	display: none;
+	background: #f5f5f5;
+}
+.mobile__title {
+	font-family: "NAMU Pro", sans-serif;
+	font-weight: 900;
+}
+
+.mobile__content-item {
+	padding-bottom: 40px;
+}
+.mobile__content-item:last-child {
+	padding-bottom: 70px;
+}
+
+.mobile__content-item:nth-child(1) .mobile__title {
+	font-size: 26px;
+	padding-top: 60px;
+	padding-bottom: 20px;
+}
+.mobile__content-item:nth-child(2) .mobile__title {
+	font-size: 22px;
+	padding-bottom: 16px;
+}
+.mobile__content-item:nth-child(3) .mobile__title {
+	font-size: 20px;
+	padding-bottom: 14px;
+}
+.mobile__content-item:nth-child(4) .mobile__title {
+	font-size: 16px;
+	padding-bottom: 12px;
+}
+.mobile__content-item:nth-child(5) .mobile__title {
+	font-size: 14px;
+	padding-bottom: 10px;
+}
+
+.mobile__text {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 1.4;
+	color: #000;
 }
 
 /* ========================= */
@@ -661,6 +707,10 @@
 	color: #111;
 }
 
+.faq__title-mobile {
+	display: none;
+}
+
 .accordion {
 }
 
@@ -681,11 +731,14 @@
 	width: 100%;
 }
 
-.accordion__item-plus {
-	width: 40px;
+.accordion__item-plus svg {
+	min-width: 40px;
 	height: 40px;
+	transition: transform 0.3s ease;
 }
-
+.accordion__item-plus svg.rotated {
+	transform: rotate(45deg);
+}
 .accordion__item-plus::before {
 	content: "";
 	width: 30px;
@@ -937,24 +990,66 @@
 
 /* ============================ */
 
+@media (max-width: 1600px) {
+	.opinion__title {
+		font-size: 39px;
+	}
+	.opinion__text {
+		font-size: 16px;
+	}
+	.opinion__photo {
+		width: 600px;
+		opacity: 0.5;
+	}
+}
+
 @media (max-width: 1300px) {
 	.nav__item {
 		font-size: 16px;
 	}
 
+	.hero__title {
+	}
+
+	.hero__text {
+	}
+
 	.hero__img {
-		box-shadow: none;
+		top: 224px;
+		width: 840px;
+	}
+
+	.hero__img img {
+	}
+
+	.hero__button button {
+		padding: 7px 26.5px;
+	}
+	.card__link {
+		font-family: "Open Sans", sans-serif;
+		font-weight: 400;
+		font-size: 20px;
+		display: flex;
+		gap: 20px;
+		padding-bottom: 20px;
+		margin-top: 10px;
+		margin-left: 30px;
+	}
+	.card__stock {
+		font-family: "NAMU Pro", sans-serif;
+		font-weight: 900;
+		font-size: 25px;
+		padding-top: 15px;
+		margin-left: 30px;
 	}
 }
 
 @media (max-width: 1100px) {
 	.header__top-inner {
-		justify-content: start;
-		position: relative;
+		justify-content: space-between;
 	}
 
 	.head__top-logo {
-		padding-right: 785px;
 	}
 
 	.nav {
@@ -988,13 +1083,95 @@
 	}
 
 	.header__nav-icon {
-		position: absolute;
-		right: 1vh;
 	}
 
 	.burger-icon {
 		display: flex;
 		margin: 0 40px 0 70px;
+	}
+
+	.header__hero-inner {
+		display: flex;
+		min-height: 520px;
+	}
+
+	.hero__title {
+		padding: 150px 0 30px;
+	}
+
+	.hero__text {
+		padding-bottom: 40px;
+	}
+
+	.hero__img {
+		top: 98px;
+		width: 600px;
+	}
+	.hero__img img {
+	}
+
+	.hero__button {
+		padding: 7px 27px;
+		background: #c5358c;
+	}
+
+	/* ====================== */
+
+	.footer {
+		background: #111;
+	}
+
+	.footer__inner {
+		min-height: 419px;
+	}
+
+	.footer__logo img {
+		width: 143px;
+		height: 61px;
+	}
+
+	.footer__about {
+		font-size: 18px;
+	}
+
+	.footer__info {
+		gap: 10px;
+	}
+
+	.footer__title {
+		font-size: 20px;
+	}
+
+	.footer__list {
+	}
+
+	.footer__link {
+		font-size: 16px;
+	}
+
+	.footer__link li {
+	}
+
+	.footer__link:hover {
+	}
+
+	.footer__logistics {
+		font-size: 20px;
+		width: 200px;
+	}
+
+	.footer__number {
+	}
+
+	.footer__number:hover {
+	}
+
+	.footer__socials svg {
+		width: 30px;
+	}
+
+	.footer__copy {
+		font-size: 14px;
 	}
 }
 
@@ -1003,19 +1180,43 @@
 		padding: 0 30px;
 	}
 
+	.header__hero-inner {
+		min-height: 389px;
+	}
+
 	.hero__info {
 		max-width: 363px;
+		margin-left: 70px;
+	}
+
+	.hero__title {
+		padding: 80px 0 20px;
+		font-family: "NAMU Pro", sans-serif;
+		font-weight: 900;
+		font-size: 30px;
+		line-height: 1;
+		color: #111;
 	}
 
 	.hero__text {
+		padding-bottom: 40px;
+		font-family: "Open Sans", sans-serif;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 1.3;
+		color: #111;
 		max-width: 253px;
 	}
 
 	.hero__img {
-		max-width: 70vw;
+		max-width: 374px;
+		width: 374px;
+		height: 389px;
+		top: 160px;
 	}
 
 	.hero__img img {
+		max-width: 374px;
 	}
 	.head__top-logo {
 		display: flex;
@@ -1025,5 +1226,353 @@
 	.head__top-logo img {
 		width: 142px;
 		height: 60px;
+	}
+
+	/* ==================== */
+	.opinion__inner {
+		padding: 50px 0 50px;
+	}
+	.opinion__content {
+		padding: 0;
+	}
+
+	.opinion__title {
+		font-size: 26px;
+		margin: 0 0 20px;
+	}
+	.opinion__text {
+		font-size: 12px;
+	}
+	.opinion__img {
+		display: none;
+	}
+
+	/* ==================== */
+
+	.mobile__content {
+		display: block;
+	}
+
+	/* ==================== */
+
+	.advantages__cards {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.advantages__item {
+		height: 190px;
+	}
+	.advantages__item svg {
+		height: 74px;
+		width: 74px;
+	}
+
+	.advantages__cards-title {
+		margin: 11px 0 8px;
+		font-size: 14px;
+	}
+	.advantages__text:last-child {
+		padding-bottom: 30px;
+	}
+	.advantages__cards-info {
+		max-width: 304px;
+		font-size: 12px;
+	}
+
+	/* ==================== */
+	.faq {
+		padding-top: 60px;
+	}
+	.faq__head {
+		padding-bottom: 40px;
+	}
+	.faq__title {
+		font-size: 26px;
+	}
+	.accordion__head {
+		font-size: 16px;
+	}
+
+	.accordion__body {
+		font-size: 14px;
+	}
+
+	.accordion__item-plus svg {
+		min-width: 30px;
+		height: 30px;
+	}
+
+	/* ==================== */
+
+	.footer {
+		background: #111;
+		height: 252px;
+	}
+
+	.footer__inner {
+	}
+
+	.footer__logo {
+		padding: 20px 0 10px;
+	}
+	.footer__logo img {
+		width: 73px;
+		height: 31px;
+	}
+
+	.footer__about {
+		font-size: 14px;
+		padding-bottom: 10px;
+	}
+
+	.footer__info {
+		gap: 10px;
+	}
+
+	.footer__title {
+		font-size: 14px;
+		padding-bottom: 6px;
+	}
+
+	.footer__list {
+		gap: 2px;
+	}
+
+	.footer__link {
+		font-size: 10px;
+	}
+
+	.footer__link li {
+	}
+
+	.footer__link:hover {
+	}
+
+	.footer__logistics {
+		font-size: 14px;
+		width: 100%;
+	}
+
+	.footer__number {
+	}
+
+	.footer__number:hover {
+	}
+
+	.footer__socials svg {
+		width: 21px;
+	}
+	.footer__socials {
+		padding-top: 12px;
+		gap: 10px;
+		margin-bottom: 38px;
+	}
+
+	.footer__copy {
+		font-size: 10px;
+	}
+}
+
+@media (max-width: 500px) {
+	.head__top-logo img {
+		width: 100%;
+	}
+
+	/* ==================== */
+	.mobile__content {
+		text-align: center;
+		padding: 40px 0 40px;
+	}
+
+	.opinion__inner {
+		text-align: center;
+		padding: 40px 0 40px;
+	}
+}
+
+@media (max-width: 650px) {
+	.header__logo {
+		margin-right: 40px;
+	}
+
+	.header__hero {
+		display: flex;
+		align-items: center;
+		text-align: center;
+	}
+
+	.header__hero-inner {
+		min-height: 320px;
+		display: block;
+	}
+
+	.hero__info {
+		margin: 0;
+		align-items: center;
+	}
+	.hero__text {
+		max-width: none;
+	}
+	.hero__img {
+		display: none;
+	}
+	/* ==================== */
+
+	.advantages__title {
+		font-size: 24px;
+		margin-top: 70px;
+	}
+
+	/* ==================== */
+
+	.footer__logistics {
+		font-size: 14px;
+		min-width: 138px;
+	}
+}
+
+@media (max-width: 450px) {
+	.footer {
+		background: #111;
+		height: 327px;
+	}
+
+	.footer__inner {
+	}
+
+	.footer__logo {
+		padding: 16px 0 6px;
+	}
+	.footer__logo img {
+		width: 110px;
+		height: 46px;
+	}
+
+	.footer__about {
+		font-size: 12px;
+		padding-bottom: 10px;
+	}
+
+	.footer__info {
+		gap: 10px;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.footer__title {
+		font-size: 12px;
+		padding-bottom: 4px;
+	}
+
+	.footer__list {
+		gap: 2px;
+	}
+
+	.footer__link {
+		font-size: 10px;
+	}
+
+	.footer__link li {
+	}
+
+	.footer__link:hover {
+	}
+
+	.footer__logistics {
+		font-size: 14px;
+		width: 100%;
+	}
+
+	.footer__number {
+	}
+
+	.footer__number:hover {
+	}
+
+	.footer__socials svg {
+		width: 21px;
+	}
+	.footer__socials {
+		padding-top: 12px;
+		gap: 10px;
+		margin-bottom: 5px;
+	}
+
+	.footer__copy {
+		font-size: 10px;
+	}
+}
+@media (max-width: 390px) {
+	.header__logo {
+		margin-right: 20px;
+	}
+
+	.hero__img {
+		max-width: 374px;
+		width: 374px;
+		height: 389px;
+	}
+
+	.hero__info {
+		padding-bottom: 20px;
+	}
+
+	/* ==================== */
+	.advantages__title {
+		text-align: center;
+	}
+	.advantages__item {
+		height: 116px;
+		padding: 0 20px;
+		gap: 43px;
+		flex-direction: row;
+		align-items: center;
+		justify-content: stretch;
+	}
+	.advantages__item svg {
+		height: 74px;
+		width: 74px;
+	}
+
+	.advantages__text p {
+		text-align: left;
+	}
+
+	/* .advantages__cards-title {
+		margin: 11px 0 8px;
+		font-size: 14px;
+	}
+	.advantages__text:last-child {
+		padding-bottom: 30px;
+	}
+	.advantages__cards-info {
+		max-width: 304px;
+		font-size: 12px;
+	} */
+	.advantages__cards {
+		grid-template-columns: 1fr;
+	}
+
+	/* ==================== */
+	.faq {
+		padding: 0px;
+	}
+	.faq__head {
+		padding: 0;
+	}
+	.faq__title {
+		display: none;
+	}
+
+	.faq__title-mobile {
+		display: block;
+		font-family: "NAMU Pro", sans-serif;
+		font-weight: 900;
+		font-size: 20px;
+		padding-top: 46px;
+	}
+
+	.accordion__item-plus svg {
+		min-width: 24px;
+		height: 24px;
 	}
 }

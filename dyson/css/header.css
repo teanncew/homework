@@ -105,19 +105,16 @@
 }
 
 .header__hero-inner {
-}
-
-.hero__wrapper {
 	display: flex;
+	min-height: 850px;
 }
 
 .hero__info {
-	width: 556px;
+	max-width: 556px;
 	z-index: 2;
 }
 
 .hero__content {
-	width: 556px;
 }
 
 .hero__title {
@@ -151,11 +148,10 @@
 }
 
 .hero__img {
+	position: absolute;
 	margin-left: 87px;
-	box-shadow: -4px 0px 4px 0px rgba(34, 60, 80, 0.09);
-	max-height: 100%;
-	width: 997px;
+	right: 1vh;
 }
-
 .hero__img img {
+	width: 100%;
 }
