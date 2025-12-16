@@ -16,9 +16,9 @@
 })()
 
 
-// Сначала популярные
+// Выпадашка 
 
-const dropdownBtn = document.querySelector('.dropdownBtn');
+const dropdownBtn = document.querySelector('.dropdown__btn');
 const dropdownList = document.querySelector('.dropdownList');
 
 dropdownBtn.addEventListener('click', () => {
