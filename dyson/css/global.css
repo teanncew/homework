@@ -1,3 +1,7 @@
+html {
+	scroll-behavior: smooth;
+}
+
 .body--opened-menu {
 	overflow: hidden;
 }

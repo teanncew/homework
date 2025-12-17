@@ -18,9 +18,6 @@
 	height: 77px;
 }
 
-.nav {
-}
-
 .nav__list {
 	display: flex;
 	gap: 30px;
@@ -112,9 +109,6 @@
 .hero__info {
 	max-width: 556px;
 	z-index: 2;
-}
-
-.hero__content {
 }
 
 .hero__title {
