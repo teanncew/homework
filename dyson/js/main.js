@@ -133,14 +133,11 @@ document.querySelector('.news__bottom-link').addEventListener('click', function 
 
   if (isHidden) {
     extraContent.style.display = 'flex';
-    btnContainer.style.marginBottom = '70px';
     extraContent.classList.add('animate-show');
     this.querySelector('.news__bottom-link').textContent = 'Скрыть';
   } else {
     extraContent.style.display = 'none';
-    btnContainer.style.marginTop = '150px';
     this.querySelector('.news__bottom-link').textContent = 'Показать еще';
   }
 });
 
-// 
